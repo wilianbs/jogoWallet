@@ -12,19 +12,24 @@ function addNomes(){
 
         newNome.querySelector("#nome").textContent = nomes;
 
-        newNome.classList.remove(".linhaDePontos")
+        //newNome.classList.remove(".linhaDePontos")
 
         const novo = document.querySelector(".linhaDePontos")
 
         novo.appendChild(newNome);
 
+        const removeBtn = newNome.querySelector(".removBtn").addEventListener("click", function (){
+            renoveNome (this)
+        })
+
+
         document.querySelector("#nome").value = "";
 
-
-
     }
+}
 
-
+function renoveNome(novo){
+    novo.parentNode.remove (true)
 }
 
 

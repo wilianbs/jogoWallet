@@ -14,7 +14,8 @@ body{
 
 }
 .titulo{
-    margin: 20px;
+    margin: 10px;
+    font-size: 30px;
 }
 h1{
     text-align: center;

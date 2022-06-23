@@ -1,3 +1,24 @@
+    
+
+    //teste de somar array
+    //------------------------------------
+    let jogador ={
+        nome: "wilian",
+        pontos: [23,5,7,12]
+    }
+    let soma =0
+
+    for(let pos in jogador.pontos){
+        soma += jogador.pontos[pos]
+
+    }
+    
+        console.log (jogador.pontos)
+        console.log(soma)
+
+    //------------------------------------------
+
+
 
     
         let valoresTotal = []
@@ -46,7 +67,7 @@ function addNomes(){
         const removeBtn = newNome.querySelector(".removBtn").addEventListener("click", function (){
             renoveNome (this)
 
-
+            
         })
 
         document.querySelector("#nome").value = "";

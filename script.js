@@ -1,15 +1,32 @@
 
+    
+        let valoresTotal = []
 
-var valor = document.querySelector("input#pontos")
+     function addValores() {
 
-     console.log (valor.value)
+        let valor = document.querySelector("input#pontos")
+        let vNum = document.querySelector (".valoresSoma")
+        let resultado = document.querySelector (".total")
+        
+        
+        valoresTotal.push(Number(valor.value))
+        vNum.innerHTML=` ${valoresTotal}`
+        valor.value = ""
+        let soma =0
+
+        for(let pos in valoresTotal){
+            soma += valoresTotal[pos]
+
+        }
+        resultado.innerHTML=`${soma}`
+     }
 
     
 
 
 function addNomes(){
     const nomes = document.querySelector("#nome").value;
-    
+   
     if (nomes){
 
         //Clonar html
@@ -25,15 +42,15 @@ function addNomes(){
 
         novo.appendChild(newNome);
 
+
         const removeBtn = newNome.querySelector(".removBtn").addEventListener("click", function (){
             renoveNome (this)
 
+
         })
 
-        
-
-
         document.querySelector("#nome").value = "";
+  
 
     }
 }
@@ -52,9 +69,6 @@ addBtn.addEventListener( "click", function(e){
     e.preventDefault()
     
     addNomes()
-
-  
-
 
 
 })

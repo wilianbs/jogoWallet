@@ -17,7 +17,7 @@
         <input type="number" name="limiteDePontos" id="limite" min="0" placeholder="Limite">
 
         <div class="barra">
-           <p>Jogador</p>  <p>Pontos</p> <p>Total</p>
+           <p>Jogador</p>  <p>Pontos</p> 
         </div>
         <div class="addNome">
             <input type="button" value="Adicionar" class="btnAdicionar">
@@ -27,7 +27,7 @@
             
             <div class="dados">
                 
-                <input type="button" value="x" class="removBtn"> <span>000</span>
+                <input type="button" value="x" class="removBtn"> <span class="total">000</span>
                 <input type="text" name="nome" id="nome" placeholder="Nome">
                 
                 <div class="pontos" >
@@ -35,8 +35,8 @@
                     <input type="number" name="pontos" id="pontos" min="0" >
                
                     
-                    
-
+                    <input type="button" value="+" class="btnPontos" onclick="addValores()">
+                    <span class="valoresSoma">0</span>
                     
                      
                    

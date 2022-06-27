@@ -4,7 +4,7 @@
     //------------------------------------
     let jogador ={
         nome: "wilian",
-        pontos: [23,5,7,12]
+        pontos: []
     }
     let soma =0
 

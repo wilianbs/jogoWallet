@@ -1,13 +1,13 @@
-    
 
     //teste de somar array
     //------------------------------------
     let jogador ={
         nome: "wilian",
-        pontos: []
+        pontos: [1,2,3]
+
+        
     }
     let soma =0
-
     for(let pos in jogador.pontos){
         soma += jogador.pontos[pos]
 

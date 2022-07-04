@@ -1,26 +1,63 @@
 
-    //teste de somar array
-    //------------------------------------
-    let jogador ={
-        nome: "wilian",
-        pontos: [1,2,3]
+    
+    this.jogador =[
+        { nome: "wilian", pontos: [1,12,3,2], total:[]},
+        { nome: "Joao", pontos: [7,9,6,3], total:[] },
+        { nome: "maria", pontos:[4,9,5,3,10], total:[] },
+    ]
+    this.id = 0
+    let chave = 1
+    var soma = 0;
 
+    for (var i = 0; i < jogador[chave].pontos.length; i++) {
+        soma += jogador[chave].pontos[i]
+    }
+
+    jogador[chave].total.push(soma)
         
-    }
-    let soma =0
-    for(let pos in jogador.pontos){
-        soma += jogador.pontos[pos]
+   
+   // console.log(soma)
+   // console.log(jogador[chave].total)
+
+  // adicionar(dadosJogador){
+   // this.jogador.push(dadosJogador)
+   // this.id++
+
+//}
+
+
+
+    function salvar(){
+        let addDados = this.lerDados()
+        
+        console.log(dadosJogador)
 
     }
-    
-        console.log (jogador.pontos)
-        console.log(soma)
+    function lerDados(){
+        let dadosJogador = {}
 
-    //------------------------------------------
+        dadosJogador.id = this.id;
+        dadosJogador.nome = document.querySelector("#nome").value;
+        dadosJogador.pontos = document.querySelector("input#pontos").value;
+
+        return dadosJogador;
+
+    }
+
+console.log(jogador)
 
 
 
-    
+
+
+
+
+
+
+
+
+
+    /*
         let valoresTotal = []
 
      function addValores() {
@@ -100,7 +137,7 @@ addBtn.addEventListener( "click", function(e){
 
 
 
-
+*/
 
 
    

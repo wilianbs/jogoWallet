@@ -3,8 +3,11 @@
     this.jogador =[
         { nome: "wilian", pontos: [1,12,3,2], total:[]},
         { nome: "Joao", pontos: [7,9,6,3], total:[] },
-        { nome: "maria", pontos:[4,9,5,3,10], total:[] },
+        { nome: "maria", pontos:[4,9,5,3,10], total:[] }
+
     ]
+  
+
     this.id = 0
     let chave = 1
     var soma = 0;

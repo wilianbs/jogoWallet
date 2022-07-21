@@ -1,6 +1,6 @@
 const jogador = {
     nome : "wilian",
-    pontos : [1,2,3,4,3,4]
+    pontos : [1,2,3,4,3,4], somarPontos()
 }
 var soma = 0
 
